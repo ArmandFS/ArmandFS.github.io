@@ -1,0 +1,315 @@
+body{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font-family: "Source Code Pro", sans-serif;
+}
+h1{
+   font-size: 200%;
+    width:100%;
+    margin: 0 auto 0 auto;
+    font-family: "Roboto Mono", serif;
+    color: rgb(166, 215, 235);
+}
+h2{
+   margin:0;
+   font-size: 150%;
+     width: 100%;
+     font-family: "Roboto Mono", serif;
+     color: rgb(205, 233, 244);
+}
+.first-about{
+   font-size: 150%;
+   font-weight: bold;
+   width: 100%;
+   font-family: "Source Code Pro", sans-serif;
+   color: rgb(202, 225, 237);
+
+}
+.top-par{
+  font-size: 150%;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    font-family: "Roboto Mono", serif;
+    color: rgb(166, 215, 235);
+    position: absolute;
+    bottom: 330px;
+    right:30px;
+}
+.top{
+   background-image: linear-gradient(rgb(3, 1, 31),rgb(48, 30, 103));
+   position: relative;
+   height:1000px;
+   padding-top:80px;
+}
+
+.profile{
+   background-image:linear-gradient(rgb(48, 30, 103),rgb(227, 133, 56));
+}
+
+
+.second-content{
+   background-image:linear-gradient(rgb(227, 133, 56), rgb(146, 25, 132));
+   padding :2rem;
+}
+
+.contact{
+   background-image:linear-gradient(rgb(227, 133, 56), rgb(146, 25, 132));
+}
+
+
+/*First container content*/
+.pulse{
+    position:relative;
+    left: 600px;
+    top: 120px;
+    width: 250px;
+    height: 250px;
+    background: yellow;
+    border-radius: 50%
+}
+.pulse span{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    opacity: .8;
+    animation: pulseAnimate 4s ease-out infinite;
+    animation-delay: calc(1s * var(--i));
+}
+@keyframes pulseAnimate{
+      100%{
+        opacity: 0;
+        transform: scale(1.5);
+      }
+}
+.astronaut{
+   size: 100px;
+   width: 100px;
+   position:absolute;
+   left: 100px;
+   top: 1200px;
+   animation: float 3.5s ease-in-out infinite;
+}
+
+.top-planet{
+   /*relative to its division*/
+   width:100px;
+   height:100px;
+   position: relative;
+   left: 470px;
+   top: 60px;
+   animation: float 2s ease-in-out infinite;
+}
+.magic{
+   width:50px;
+   height:50px;
+   position: absolute;
+   top: 1280px;
+   left: 830px;
+}
+.saturn{
+   height:200px;
+   width:200px;
+   position:absolute;
+   left: 630px;
+   bottom: 50px;
+   animation: float 4s ease-in-out infinite;
+}
+.crop-image{
+   padding-top:30px;
+}
+.mars{
+   height:80px;
+   width:80px;
+   position: absolute;
+   right:100px;
+   bottom: 520px;
+   animation: float 5s ease-in-out infinite;
+}
+.venus{
+   height:80px;
+   width:80px;
+   position:absolute;
+   left: 690px;
+   top: 3px;
+   animation: float 3s ease-in-out infinite;
+}
+.jupiter{
+   height:200px;
+   width:200px;
+   position:absolute;
+   right: 200px;
+   bottom: 180px;
+   animation: float 2s ease-in-out infinite;
+}
+.moon{
+   height:40px;
+   width:40px;
+   position:absolute;
+   right: 250px;
+   top:130px;
+   animation: rotate 6s linear infinite;
+}
+
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg) translateX(100px) rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg) translateX(100px) rotate(-360deg);
+   }
+}
+
+.uranus{
+   height:140px;
+   width:140px;
+   position:absolute;
+   left: 230px;
+   bottom: 160px;
+   animation: float 7s ease-in-out infinite;
+   transform:rotate(90deg);
+}
+.neptune{
+   height:120px;
+   width:120px;
+   position:absolute;
+   left: 140px;
+   bottom: 460px;
+   animation: float 3s ease-in-out infinite;
+}
+.mercury{
+   height:50px;
+   width:50px;
+   position:absolute;
+   left: 250px;
+   top: 170px;
+   animation: float 3s ease-in-out infinite;
+}
+.profile{
+   height: 500px;
+}
+.container{
+   width:100%;
+   height:100%;
+   position: absolute;
+   top: 100px;
+}
+.container2{
+   font-family: "Roboto Mono", serif;
+    color: rgb(166, 215, 235);
+   width:100%;
+   height:100%;
+   position: absolute;
+   top: 750px;
+}
+.shootingstar{
+   height:100px;
+   width:100px;
+   position:absolute;
+   left: 580px;
+   transform: rotate(329deg);
+}
+.galaxy{
+   height:50px;
+   width:50px;
+   position:absolute;
+   right: 200px;
+}
+
+
+
+
+.profile{
+    height:450px;
+}
+span{
+   color: yellow;
+}
+
+/* this css section will be for the skills part*/
+second-content{
+   background-image:linear-gradient(rgb(91, 143, 185), rgb(182, 234, 218));
+   padding :1rem;
+}
+
+h2{
+   font-size: 150%;
+     width: 100%;
+     font-family: "Roboto Mono", serif;
+     color: rgb(205, 233, 244);
+
+}
+
+h3{
+   font-size: 150%;
+     width: 100%;
+     font-family: "Roboto Mono", serif;
+     color: rgb(140, 237, 237);
+   font-weight:bold ;
+}
+
+.skill-container{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100vw;
+   justify-content: center; /* horizontally center child elements */
+   align-items: center; /* vertically center child elements */
+}
+
+
+.skill-container .skill-box{
+   width: 400px;
+}
+
+.skill-box{
+   padding: 1rem;
+   color: rgb(208, 218, 194);
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   transform-origin: center;
+
+}
+
+
+
+.skill-box:hover {
+   transform: scale(1.1);
+}
+
+
+.skill-title h3{
+   align-items: center;
+   padding: 0.5rem;
+   margin-bottom: 0.5rem;
+}
+
+.skill-icon{
+   width: 50px;
+   transition: all 0.3s ease-in-out;
+   transform-origin: center;
+}
+ 
+
+.skill-text{
+   font-size:120%;
+   font-weight:bold;
+   font-family: "Roboto Mono", serif;
+    color: rgb(179, 206, 206);
+}
+
+
+@keyframes float {
+   0% {
+      transform: translatey(0px);
+   }
+   50% {
+      transform: translatey(-20px);
+   }
+   100% {
+      transform: translatey(0px);
+   }
+}
+
