@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Armand's Stylized Personal Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Merriweather:wght@300&family=Roboto+Mono:wght@100&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style_main.css">
+    </head>
+ <body>
+ <!--Side Navigation Div--> 
+  <div class="sidenav">
+    <a href="#home"><img src="home.png"class="nav-logo"></a>
+    <a href="#about"><img src="info.png"class="nav-logo"></a>
+    <a href="#techstack"><img src="coding (1).png"class="nav-logo"></a>
+    <a href="#contact"><img src="contact-mail.png"class="nav-logo"></a>
+  </div>
+
+  <div class="top">   
+        <img class="top-planet" src="earth.png" alt="earth-img">
+        <h1>To Armand's First Portfolio Site.</h1>
+        <h2 class="top-par">A <span>Newbie</span> Programmer and a <span>"Biomedical"</span> Engineer.</h2>
+        <img class ="saturn" src="saturn.png" alt="saturn-image">
+        <img class="mars" src="mars.png" alt="mars=image">
+        <img class="venus" src="venus.png" alt="venus-image">
+        <img class="jupiter" src="jupiter.png" alt="jupiter-image">
+        <img class="moon" src="moon.png" alt="moon-image">
+        <img class="uranus" src="uranus.png" alt="uranus-image">
+        <img class="neptune" src="neptune.png" alt="neptune-image">
+        <img class="mercury" src="mercury.png" alt="mercuery-image">
+       <!--Adding a pulse animation-->
+          <div class="pulse">
+            <span style="--i:0;"></span>
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+         </div>
+       <!--Adding a text typing animation-->
+        <div class="container">
+          <h1 id="home"><span class="auto-type"></span></h1>
+        </div>
+        <!---- JS Typing Part -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+           var typed = new Typed(".auto-type",{
+            strings:["Welcome!","Wilkommen!", "Selamat Datang!","Bienvenido!","Welkom!"],
+            typeSpeed: 90,
+            backSpeed: 90,
+            loop: true
+           })
+        </script>
+        <!--Adding the 2nd text typing animation-->
+        <div class ="container2">
+          <h2>I am <span class="auto-type2"></span></h2>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+          var typed = new Typed(".auto-type2",{
+            strings:["a Dreamer.","a Coder.","an Engineer.","an Enthusiast."],
+            typeSpeed: 90,
+            backSpeed: 90,
+            loop: true
+           })
+        </script>
+  </div>
+    <!--This will be for the middle containing class-->
+  <div class="profile">
+      <img id="about" class="armandimage" src="professional-modified.png".png" alt="cropped_formal_img"  width="200" height="200">
+      <img class="shootingstar" src="shooting-star.png" alt="star">
+      <img class="galaxy" src="galaxy.png" alt="galaxy">
+      <img class="astronaut" src="astronaut.png" alt="astro">
+      <img class="magic" src="magic.png" alt="magic">
+      <h2><em>About</em> <span class = "Me"><em>Me</em></span> </h2>
+      <p class="first-about">Hi There! Let me Introduce Myself. I am Armand, </p>
+      <p class="first-about"> a (currently) third year Biomedical Engineering Major</p>
+      <p class="first-about">in Sepuluh Nopember Institute of Technology, Surabaya. </p>
+      <p id="techstack"class="first-about"> - My <span class = "Me">Current</span> Tech<span class = "Me"> Stack</span> -</p>
+  </div>
+<!-- DIV FOR 2ND CONTENT-->
+  <div class="second-content">
+      <!--second content header-->
+           <div class = "skill-container">
+              <div class="skill-box">
+                  <div class="skill-title">
+                       <div class="skill-img">
+                           <img src="html.png" class="skill-icon">
+                      </div>
+                      <h3>HTML5</h3>
+                </div>
+                <p class="skill-text">
+                It is the backbone and structure of any web-related thing, I've gotten the hang of it since it's pretty easy. I'd say my progress is about 75%
+                </p>
+              </div>
+        
+              <div class="skill-box">
+                <div class="skill-title">
+                     <div class="skill-img">
+                           <img src="css.png" class="skill-icon">
+                     </div>
+                     <h3>CSS3</h3>
+                </div>
+                <p class="skill-text">
+                  As someone who is about 45% proficient in CSS and its other frameworks, I find that I have a solid understanding of the basics, but still have a lot to learn. </p>
+              </div>
+              <div class="skill-box">
+               <div class="skill-title">
+                    <div class="skill-img">
+                          <img src="python.png" class="skill-icon">
+                    </div>
+                    <h3>Python</h3>
+                </div>
+               <p class="skill-text">
+               My most proficient language. My python stack includes matplotlib, numpy, scikit, pandas, Tensorflow. Used for Machine Learning, Medical Imaging, and Signal Processing. </p>
+              </div>
+              <div class="skill-box">
+                 <div class="skill-title">
+                    <div class="skill-img">
+                          <img src="javascript.png" class="skill-icon">
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+                <p class="skill-text">
+                  As someone who is about 25% proficient in JavaScript, I can implement it in my HTML and CSS websites to make it interactive.</p>
+              </div>
+              <div class="skill-box">
+                  <div class="skill-title">
+                     <div class="skill-img">
+                          <img src="c_lang.png" class="skill-icon">
+                     </div>
+                     <h3>C Language</h3>
+                </div>
+               <p class="skill-text">
+               The C language was one of my first programming languages. Projects include Arduino Embedded Mictrocontrollers</p>
+              </div>
+              <div class="skill-box">
+                <div class="skill-title">
+                    <div class="skill-img">
+                          <img src="sql.png" class="skill-icon">
+                    </div>
+                    <h3>Basic SQL</h3>
+                </div>
+                <p class="skill-text">
+                I've learnt basic SQL using Google Cloud SQL on the Google Cloud Platform. I've yet to try MySQL, NoSQL, and others.</p>
+              </div>
+          <!-- DIV FOR CONTAINER-->
+          </div> 
+        <!-- DIV FOR 2ND CONTENT-->
+  </div> 
+     <!-- DIV FOR CONTACT CONTENT--> 
+  <footer id="contact">
+          <div class=""container>
+             <h2>Contact Me</h2>
+             <ul>
+                 <li><a href="https://www.linkedin.com/in/armandfs/"target="_blank"><img src="linkedin.png"class="logo"></a></li>                                       </li>
+                 <li><a href="https://twitter.com/armandmeister1"target="_blank"><img src="twitter.png"class="logo"></a></li>  
+                 <li><a href="https://www.instagram.com/armandsurbakti/"target="_blank"><img src="instagram.png"class="logo"></a></li>  
+                 <li><a href="https://github.com/ArmandFS"target="_blank"><img src="github.png"class="logo"></a></li>  
+            </ul>
+            <a href="mailto:actuallyarmand@gmail.com"target="_blank"><img src="gmail.png"class="mail"></a>
+            <p>Web Hosting by github.io</p>
+            <p>All Rights Reserved.</p>
+          </div>
+  </footer>
+</body>
+</html>
