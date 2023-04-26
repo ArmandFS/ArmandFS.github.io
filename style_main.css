@@ -1,0 +1,367 @@
+body{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font-family: "Source Code Pro", sans-serif;
+}
+html {
+   scroll-behavior: smooth;
+}
+h1{
+   font-size: 200%;
+    width:100%;
+    margin: 0 auto 0 auto;
+    font-family: "Roboto Mono", serif;
+    color: rgb(166, 215, 235);
+}
+h2{
+   margin:0;
+   font-size: 150%;
+     width: 100%;
+     font-family: "Roboto Mono", serif;
+     color: rgb(205, 233, 244);
+}
+.first-about{
+   font-size: 150%;
+   font-weight: bold;
+   width: 100%;
+   font-family: "Source Code Pro", sans-serif;
+   color: rgb(202, 225, 237);
+}
+.top-par{
+  font-size: 150%;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    font-family: "Roboto Mono", serif;
+    color: rgb(166, 215, 235);
+    position: absolute;
+    bottom: 330px;
+    right:30px;
+}
+/*nav content*/
+.nav-logo{
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+}
+.sidenav {
+   height: 100%;
+   width: 100px;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   overflow-x: hidden;
+   padding-top: 20px;
+   transition: width 0.5s;
+ }
+ .sidenav img {
+   background-color:rgb(250, 156, 187);
+   padding: 5px;
+ }
+ .sidenav a {
+   display: block;
+   text-align: center;
+   padding: 16px;
+ }
+ .sidenav a:hover {
+   background-color: #bc65ff;
+ }
+ .sidenav:hover {
+   width: 130px;
+    filter: contrast(110%);
+ }
+ 
+  
+/*Content background colour*/
+.top{
+   background-image: linear-gradient(rgb(3, 1, 31),rgb(133, 102, 226));
+   position: relative;
+   height:1000px;
+   padding-top:80px;
+}
+.profile{
+   background-image:linear-gradient(rgb(133, 102, 226),rgb(244, 112, 171));
+}
+
+.second-content{
+   background-image:linear-gradient(rgb(244, 112, 171), rgb(239, 76, 76));
+   padding :2rem;
+}
+footer{
+   background-image:linear-gradient(rgb(239, 76, 76), rgb(198, 172, 3));
+   padding: 3em;
+   min-width: 560px;
+}
+
+
+/*First container content*/
+.pulse{
+    position:relative;
+    left: 600px;
+    top: 120px;
+    width: 250px;
+    height: 250px;
+    background: yellow;
+    border-radius: 50%
+}
+.pulse span{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    opacity: .8;
+    animation: pulseAnimate 4s ease-out infinite;
+    animation-delay: calc(1s * var(--i));
+}
+@keyframes pulseAnimate{
+      100%{
+        opacity: 0;
+        transform: scale(1.5);
+      }
+}
+.astronaut{
+   size: 100px;
+   width: 100px;
+   position:absolute;
+   left: 300px;
+   top: 1200px;
+   animation: float 3.5s ease-in-out infinite;
+}
+.top-planet{
+   /*relative to its division*/
+   width:100px;
+   height:100px;
+   position: relative;
+   left: 470px;
+   top: 60px;
+   animation: float 2s ease-in-out infinite;
+}
+.magic{
+   width:50px;
+   height:50px;
+   position: absolute;
+   top: 1280px;
+   left: 830px;
+}
+.saturn{
+   height:200px;
+   width:200px;
+   position:absolute;
+   left: 630px;
+   bottom: 50px;
+   animation: float 4s ease-in-out infinite;
+}
+.crop-image{
+   padding-top:30px;
+}
+.mars{
+   height:80px;
+   width:80px;
+   position: absolute;
+   right:100px;
+   bottom: 520px;
+   animation: float 5s ease-in-out infinite;
+}
+.venus{
+   height:80px;
+   width:80px;
+   position:absolute;
+   left: 690px;
+   top: 3px;
+   animation: float 3s ease-in-out infinite;
+}
+.jupiter{
+   height:200px;
+   width:200px;
+   position:absolute;
+   right: 200px;
+   bottom: 180px;
+   animation: float 2s ease-in-out infinite;
+}
+.moon{
+   height:40px;
+   width:40px;
+   position:absolute;
+   right: 250px;
+   top:130px;
+   animation: rotate 6s linear infinite;
+}
+@keyframes rotate {
+   0% {
+      transform: rotate(0deg) translateX(100px) rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg) translateX(100px) rotate(-360deg);
+   }
+}
+.uranus{
+   height:140px;
+   width:140px;
+   position:absolute;
+   left: 230px;
+   bottom: 160px;
+   animation: float 7s ease-in-out infinite;
+   transform:rotate(90deg);
+}
+.neptune{
+   height:120px;
+   width:120px;
+   position:absolute;
+   left: 140px;
+   bottom: 460px;
+   animation: float 3s ease-in-out infinite;
+}
+.mercury{
+   height:50px;
+   width:50px;
+   position:absolute;
+   left: 250px;
+   top: 170px;
+   animation: float 3s ease-in-out infinite;
+}
+.profile{
+   height: 500px;
+}
+.container{
+   width:100%;
+   height:100%;
+   position: absolute;
+   top: 100px;
+}
+.container2{
+   font-family: "Roboto Mono", serif;
+    color: rgb(166, 215, 235);
+   width:100%;
+   height:100%;
+   position: absolute;
+   top: 750px;
+}
+.shootingstar{
+   height:100px;
+   width:100px;
+   position:absolute;
+   left: 580px;
+   transform: rotate(329deg);
+}
+.galaxy{
+   height:50px;
+   width:50px;
+   position:absolute;
+   right: 200px;
+}
+.profile{
+    height:450px;
+}
+span{
+   color: yellow;
+}
+/* this css section will be for the skills part*/
+h2{
+   font-size: 150%;
+     width: 100%;
+     font-family: "Roboto Mono", serif;
+     color: rgb(141, 242, 244);
+}
+h3{
+   font-size: 150%;
+     width: 100%;
+     font-family: "Roboto Mono", serif;
+     color: rgb(242, 210, 54);
+   font-weight:bold ;
+}
+.skill-container{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100vw;
+   justify-content: center; /* horizontally center child elements */
+   align-items: center; /* vertically center child elements */
+}
+.skill-container .skill-box{
+   width: 400px;
+}
+.skill-box{
+   padding: 1rem;
+   color: rgb(43, 49, 35);
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+   transform-origin: center;
+}
+.skill-title h3{
+   align-items: center;
+   padding: 0.5rem;
+   margin-bottom: 0.5rem;
+}
+.skill-icon{
+   width: 50px;
+   transition: all 0.3s ease-in-out;
+   transform-origin: center;
+}
+.skill-box:hover,
+.skill-box:focus{
+   transition: 0.3s;
+   transform: scale(1.1);
+   filter: contrast(9000%);
+}
+.skill-text{
+   font-size:120%;
+   font-weight:bold;
+   font-family: "Roboto Mono", serif;
+    color: rgb(212, 243, 243);
+}
+@keyframes float {
+   0% {
+      transform: translatey(0px);
+   }
+   50% {
+      transform: translatey(-20px);
+   }
+   100% {
+      transform: translatey(0px);
+   }
+}
+/* this css section will be for the contact part*/
+footer h2{
+   position:relative;
+    left: 20px;
+}
+footer li{
+   display: inline-block;
+   margin: 1em;
+}
+footer p{
+   font-family: "Roboto Mono", serif;
+    color: rgb(253, 253, 253);
+   font-weight:bold; 
+   font-size: 1.3em;
+   padding-top: .8em;
+   position:relative;
+   left: 30px;
+}
+.logo{
+   border-radius: 50%;
+   width: 80px;
+   height: 80px;
+}
+.logo:hover,
+.logo:focus{
+    transition: 0.3s;
+    transform: scale(1.1);
+    filter: contrast(9000%);
+}
+.mail{
+   position:relative;
+   left: 30px;
+   border-radius: 50%;
+   width: 80px;
+   height: 80px;
+}
+.mail:hover,
+.mail:focus{
+   transition: 0.3s;
+   transform: scale(1.1);
+   filter: contrast(9000%);
+}
+
